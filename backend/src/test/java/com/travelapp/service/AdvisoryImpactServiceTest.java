@@ -31,6 +31,9 @@ class AdvisoryImpactServiceTest {
     @Mock
     private AdvisoryService advisoryService;
 
+    @Mock
+    private NotificationService notificationService;
+
     @InjectMocks
     private AdvisoryImpactService impactService;
 
