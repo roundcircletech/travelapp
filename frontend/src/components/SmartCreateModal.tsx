@@ -16,7 +16,7 @@ const SmartCreateModal: React.FC<SmartCreateModalProps> = ({ isOpen, onClose, on
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await fetch('http://localhost:8080/api/workflows/parse', {
+            const response = await fetch('/api/workflows/parse', {
                 method: 'POST',
                 headers: { 'Content-Type': 'text/plain' }, // Send raw text
                 body: text

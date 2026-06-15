@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.travelapp.service.AdvisoryImpactServiceTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.412 s -- in com.travelapp.service.AdvisoryImpactServiceTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.425 s <<< FAILURE! -- in com.travelapp.service.AdvisoryImpactServiceTest
+com.travelapp.service.AdvisoryImpactServiceTest.processNewAdvisory_ShouldCloneAndAnnotate_WhenBookingIsImpacted -- Time elapsed: 0.054 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.travelapp.service.NotificationService.sendEmail(String, String, String)" because "this.notificationService" is null
+	at com.travelapp.service.AdvisoryImpactService.processNewAdvisory(AdvisoryImpactService.java:95)
+	at com.travelapp.service.AdvisoryImpactServiceTest.processNewAdvisory_ShouldCloneAndAnnotate_WhenBookingIsImpacted(AdvisoryImpactServiceTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

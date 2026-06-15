@@ -60,7 +60,7 @@ const Workflow: React.FC<WorkflowProps> = ({ activeWorkflowId, onWorkflowChange 
         if (selectedStep || !activeWorkflowId) return; // Don't poll while editing a step
 
         try {
-            const response = await fetch(`http://localhost:8080/api/workflows/${activeWorkflowId}`);
+            const response = await fetch(`/api/workflows/${activeWorkflowId}`);
             if (response.ok) {
                 const data = await response.json();
                 setWorkflow(data);
@@ -126,7 +126,7 @@ const Workflow: React.FC<WorkflowProps> = ({ activeWorkflowId, onWorkflowChange 
         setWorkflow(updatedWorkflow);
 
         try {
-            await fetch(`http://localhost:8080/api/workflows/${workflow.id}`, {
+            await fetch(`/api/workflows/${workflow.id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(updatedWorkflow)
@@ -281,7 +281,7 @@ const Workflow: React.FC<WorkflowProps> = ({ activeWorkflowId, onWorkflowChange 
                         setWorkflow(updatedWorkflow);
 
                         try {
-                            await fetch(`http://localhost:8080/api/workflows/${workflow.id}`, {
+                            await fetch(`/api/workflows/${workflow.id}`, {
                                 method: 'PUT',
                                 headers: { 'Content-Type': 'application/json' },
                                 body: JSON.stringify(updatedWorkflow)

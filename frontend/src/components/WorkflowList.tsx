@@ -23,7 +23,7 @@ const WorkflowList: React.FC<WorkflowListProps> = ({ onSelectWorkflow, activeWor
 
     const fetchWorkflows = async () => {
         try {
-            const response = await fetch('http://localhost:8080/api/workflows');
+            const response = await fetch('/api/workflows');
             const data = await response.json();
             // Sort by ID descending (newest first)
             // Assuming ID is somewhat time-based or appended. 

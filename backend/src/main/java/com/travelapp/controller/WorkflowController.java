@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/api/workflows")
-@CrossOrigin(origins = "http://localhost:5173") // Allow access from React app
 public class WorkflowController {
 
     @Autowired

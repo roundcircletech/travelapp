@@ -1,0 +1,51 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+backend/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+*.swp
+*.swo
+*~
+
+# Backend (Java / Maven)
+backend/target/
+backend/*.jar
+backend/*.war
+backend/*.ear
+backend/*.class
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# Backend debug exports (local artifacts)
+backend/workflows*.json
+backend/debug_workflows.json
+
+# Frontend (Node / Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test & coverage
+coverage/
+*.lcov
+backend/surefire-reports/
+
+# Docker (local overrides only; keep compose files tracked)
+docker-compose.override.yml

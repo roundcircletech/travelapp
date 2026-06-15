@@ -1,3 +1,4 @@
+com/travelapp/config/WebConfig.class
 com/travelapp/service/AdvisoryService.class
 com/travelapp/model/TravelAdvisory.class
 com/travelapp/service/AdvisoryImpactService.class
@@ -14,6 +15,6 @@ com/travelapp/model/ParsedItinerary.class
 com/travelapp/model/WorkflowStep$StepStatus.class
 com/travelapp/service/WorkflowParserService.class
 com/travelapp/model/BookingWorkflow.class
-com/travelapp/controller/AdvisoryController.class
 com/travelapp/controller/WorkflowController.class
+com/travelapp/controller/AdvisoryController.class
 com/travelapp/repository/AdvisoryRepository.class
